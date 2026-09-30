@@ -1,0 +1,35 @@
+/* ---------- Ads (Lira / AdSense / Apn) ---------- */
+#apn_skin_tag,
+#apnx_preroll_wrapper,
+[class*="lira-container"],
+[class*="smart-adv-lira"],
+[class*="adsense-before-listing-container"],
+[id^="listing-in-content"],
+[id^="listing-skyscraper"],
+#listing-top,
+#listing-aside,
+#banner_container,
+.listing-widget:has([class*="lira"]),
+.listing-widget:has([class*="smart-adv"]) {
+  display: none !important;
+}
+
+/* ---------- SubitoPiù promo banner inside the grid ---------- */
+.listing-widget:has(article[class*="banner-module"]),
+article[class*="banner-module"] {
+  display: none !important;
+}
+
+/* ---------- Footer + collapsible SEO sections ---------- */
+#suggested-searches,
+section:has(> [class*="accordion-wrapper"]),
+[class*="Sitemap-module"],
+div[data-google-interstitial]:has(> footer),
+footer {
+  display: none !important;
+}
+
+/* ---------- Elements flagged by content.js (e.g. Vetrina) ---------- */
+[data-sc-hidden] {
+  display: none !important;
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Subito Cleaner",
+  "version": "1.0",
+  "description": "Removes Vetrina listings, banners, ad containers and footer sections on subito.it",
+  "content_scripts": [
+    {
+      "matches": ["https://www.subito.it/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
